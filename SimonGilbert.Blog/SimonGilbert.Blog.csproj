@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SimonGilbert.Blog.Repositories\SimonGilbert.Blog.Repositories.csproj" />
+    <ProjectReference Include="..\SimonGilbert.Blog.Services\SimonGilbert.Blog.Services.csproj" />
+    <ProjectReference Include="..\SimonGilbert.Blog.Context\SimonGilbert.Blog.Context.csproj" />
+    <ProjectReference Include="..\SimonGilbert.Blog.Models\SimonGilbert.Blog.Models.csproj" />
+    <ProjectReference Include="..\SimonGilbert.Blog.Validation\SimonGilbert.Blog.Validation.csproj" />
+  </ItemGroup>
+</Project>
